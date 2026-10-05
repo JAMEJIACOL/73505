@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>73505 // No es Religión. Es un Estilo de Vida.</title>
+  <meta name="description" content="73505 es una declaración de moda urbana contemporánea nacida en Bogotá. Confección premium en algodón 96% y spandex con estampación DTF Ultra-HD.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Archivo Black"', 'sans-serif'],
+            sans: ['"Space Grotesk"', 'sans-serif'],
+            body: ['"Plus Jakarta Sans"', 'sans-serif'],
+            watch: ['"Watch MN"', '"Space Grotesk"', 'sans-serif']
+          },
+          colors: {
+            brand: {
+              black: '#070708',
+              dark: '#0f0f12',
+              card: '#151518',
+              surface: '#1c1c20',
+              border: '#28282e',
+              ivory: '#f4efe6',
+              stone: '#d1ccc0',
+              muted: '#9a9aa2',
+              red: '#e11d48',
+              gold: '#d4af37',
+              whatsapp: '#25D366'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Adobe Fonts WATCH MN font-face declaration and fallback */
+    @font-face {
+      font-family: 'Watch MN';
+      src: local('Watch MN'), local('WatchMN'), local('Watch-MN');
+      font-display: swap;
+    }
+    .font-watch {
+      font-family: 'Watch MN', 'Space Grotesk', sans-serif;
+      letter-spacing: 0.15em;
+    }
+    .bg-grid {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    }
+    .text-stroke {
+      -webkit-text-stroke: 1.5px rgba(244, 239, 230, 0.9);
+      color: transparent;
+    }
+    .glow-gold {
+      box-shadow: 0 0 45px -10px rgba(212, 175, 55, 0.2);
+    }
+
+    /* Preloader */
+    #preloader {
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+    #preloader.hidden-loader {
+      opacity: 0;
+      visibility: hidden;
+    }
+  </style>
+</head>
+<body class="bg-brand-black text-brand-ivory font-sans antialiased selection:bg-brand-red selection:text-white">
+
+  <!-- Preloader for Scrollytelling Sequence -->
+  <div id="preloader" class="fixed inset-0 z-[100] bg-brand-black flex flex-col items-center justify-center p-6 text-center">
+    <img src="images/logo.png" alt="73505" class="h-16 w-auto mb-6 object-contain">
+    <div class="w-64 h-2 bg-brand-border rounded-full overflow-hidden mb-3">
+      <div id="preloader-bar" class="h-full bg-brand-ivory w-0 transition-all duration-150"></div>
+    </div>
+    <span id="preloader-text" class="text-xs font-mono uppercase tracking-widest text-brand-muted">Cargando experiencia 0%</span>
+  </div>
+
+  <!-- Announcement Bar -->
+  <div class="bg-brand-surface border-b border-brand-border/60 py-2 px-6 text-center text-xs tracking-widest uppercase text-brand-stone font-medium flex items-center justify-center gap-3">
+    <span class="w-2 h-2 rounded-full bg-brand-gold animate-ping"></span>
+    <span>Envíos a todo el país • Prendas en 96% Algodón y 4% Spandex con DTF Ultra-HD</span>
+    <span class="hidden md:inline text-brand-muted">|</span>
+    <a href="https://wa.me/573192490604?text=Hola%2073505!%20Quiero%20hacer%20un%20pedido" target="_blank" class="hidden md:inline text-brand-gold hover:underline font-bold">Atención Directa: 319 249 0604</a>
+  </div>
+
+  <!-- Main Navbar -->
+  <header class="sticky top-0 z-50 bg-brand-black/90 backdrop-blur-md border-b border-brand-border/60 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo (Replaced text with official image logo) -->
+      <a href="#" class="flex items-center gap-3 group">
+        <img src="images/logo.png" alt="73505" class="h-8 sm:h-10 w-auto object-contain transition-transform group-hover:scale-105">
+        <span class="text-[11px] uppercase tracking-widest text-brand-muted hidden sm:inline-block border-l border-brand-border pl-3 font-semibold">Bogotá // Streetwear</span>
+      </a>
+
+      <!-- Navigation Links from previous version: El código - líneas - catálogo - confección - look book -->
+      <nav class="hidden lg:flex items-center gap-8 text-xs font-semibold tracking-widest">
+        <a href="#manifiesto" class="text-brand-muted hover:text-brand-ivory transition-colors uppercase">EL CÓDIGO</a>
+        <a href="#lineas" class="text-brand-muted hover:text-brand-ivory transition-colors uppercase">LÍNEAS</a>
+        <a href="#coleccion" class="text-brand-muted hover:text-brand-ivory transition-colors uppercase">CATÁLOGO</a>
+        <a href="#calidad" class="text-brand-muted hover:text-brand-ivory transition-colors uppercase">CONFECCIÓN</a>
+        <a href="#lookbook" class="text-brand-muted hover:text-brand-ivory transition-colors uppercase">LOOKBOOK</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-3">
+        <a href="https://drive.google.com/file/d/1RArrKMt2Zcyv1Yn7Vd2C8H7PQj2TN-qt/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" 
+           class="hidden sm:inline-flex items-center gap-2 border border-brand-border hover:border-brand-ivory text-brand-ivory px-4 py-2.5 text-xs font-bold uppercase tracking-wider transition-all">
+          <i data-lucide="file-text" class="w-3.5 h-3.5 text-brand-gold"></i>
+          <span>Descargar PDF</span>
+        </a>
+
+        <a href="https://wa.me/573192490604?text=Hola%2073505!%20Quiero%20conocer%20el%20catálogo%20y%20hacer%20un%20pedido" target="_blank" rel="noopener noreferrer" 
+           class="inline-flex items-center gap-2 bg-brand-ivory text-brand-black hover:bg-brand-red hover:text-white px-5 py-2.5 text-xs font-bold uppercase tracking-wider transition-all duration-200 shadow-md">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Scrollytelling 3D Hero Experience (96 Frames Canvas) -->
+  <section id="hero-experience" class="relative w-full bg-brand-black" style="height: 380vh;">
+    <!-- Sticky Fullscreen Canvas & Overlays -->
+    <div class="sticky top-0 w-full h-screen overflow-hidden flex items-center justify-center">
+      
+      <!-- Canvas Element -->
+      <canvas id="hero-canvas" class="absolute inset-0 w-full h-full object-cover"></canvas>
+
+      <!-- Gradient & Atmosphere Overlays -->
+      <div class="absolute inset-0 bg-gradient-to-t from-brand-black via-brand-black/40 to-brand-black/80 pointer-events-none"></div>
+      <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(circle at center, transparent 30%, rgba(7, 7, 8, 0.75) 100%);"></div>
+
+      <!-- Narrative Overlay Cards (Fade In / Out with Scroll - 100% Mobile & Desktop Responsive) -->
+      <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 h-full flex items-center justify-center pointer-events-none">
+
+        <!-- Card 0: Main Brand Introduction (0% - 20% scroll) -->
+        <div id="card-step-0" class="story-card absolute inset-x-4 sm:inset-x-auto sm:max-w-2xl mx-auto text-center transition-all duration-500 opacity-100 transform translate-y-0 pointer-events-auto">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 border border-brand-border bg-brand-dark/90 rounded-full text-[10px] sm:text-xs uppercase tracking-widest text-brand-gold mb-4 sm:mb-6 backdrop-blur-md">
+            <span class="w-2 h-2 rounded-full bg-brand-red animate-pulse"></span>
+            STREETWEAR CON PROPÓSITO // BOGOTÁ
+          </div>
+
+          <div class="mb-4 sm:mb-6 flex justify-center">
+            <img src="images/logo.png" alt="73505" class="h-14 sm:h-24 md:h-32 w-auto object-contain filter drop-shadow-[0_10px_25px_rgba(0,0,0,0.8)]">
+          </div>
+
+          <h1 class="font-display text-2xl sm:text-5xl lg:text-7xl uppercase tracking-tighter mb-3 sm:mb-4 text-brand-ivory leading-tight">
+            No es religión. <br class="hidden sm:block">
+            <span class="text-stroke">Es un estilo de vida.</span>
+          </h1>
+
+          <p class="max-w-xl mx-auto text-xs sm:text-base text-brand-muted font-light leading-relaxed mb-6 sm:mb-8 px-2">
+            Prendas de alta gama con fundamento de fe. Estética urbana contemporánea, caída pesada y acabados de máxima exigencia textil.
+          </p>
+
+          <div class="inline-flex items-center gap-2 text-brand-gold font-mono text-[11px] sm:text-xs uppercase tracking-widest animate-bounce">
+            <span>Desliza para explorar la marca</span>
+            <i data-lucide="chevron-down" class="w-3.5 h-3.5"></i>
+          </div>
+        </div>
+
+        <!-- Card 1: El Código / Identidad (20% - 42% scroll) -->
+        <div id="card-step-1" class="story-card absolute inset-x-4 bottom-8 sm:bottom-auto sm:inset-x-auto sm:left-12 max-w-sm sm:max-w-md mx-auto sm:mx-0 bg-brand-card/90 backdrop-blur-xl border border-brand-border p-5 sm:p-8 rounded-2xl shadow-2xl transition-all duration-500 opacity-0 transform translate-y-6 pointer-events-none">
+          <span class="text-[10px] sm:text-[11px] font-mono uppercase tracking-widest text-brand-gold block mb-1.5 font-bold">01 // EL CÓDIGO</span>
+          <h2 class="font-display text-xl sm:text-2xl uppercase tracking-tight text-brand-ivory mb-2">La Identidad que no se Oculta</h2>
+          <p class="text-xs sm:text-sm text-brand-muted leading-relaxed mb-3 sm:mb-4">
+            <strong class="text-brand-ivory">73505</strong> es la codificación numérica de <strong class="text-brand-ivory">JESÚS</strong>. Nacimos de la convicción de crear streetwear auténtico, con una estética potente y sin clichés religiosos. Cada prenda comunica propósito, convicción y pertenencia.
+          </p>
+          <div class="flex flex-wrap gap-1.5 pt-2 border-t border-brand-border/60">
+            <span class="px-2 py-0.5 bg-brand-surface text-brand-stone text-[10px] font-semibold tracking-wider uppercase rounded">Moda Urbana</span>
+            <span class="px-2 py-0.5 bg-brand-surface text-brand-stone text-[10px] font-semibold tracking-wider uppercase rounded">Sin Clichés</span>
+            <span class="px-2 py-0.5 bg-brand-surface text-brand-stone text-[10px] font-semibold tracking-wider uppercase rounded">Convicción</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Confección & Estructura (42% - 65% scroll) -->
+        <div id="card-step-2" class="story-card absolute inset-x-4 bottom-8 sm:bottom-auto sm:inset-x-auto sm:right-12 max-w-sm sm:max-w-md mx-auto sm:mx-0 bg-brand-card/90 backdrop-blur-xl border border-brand-border p-5 sm:p-8 rounded-2xl shadow-2xl transition-all duration-500 opacity-0 transform translate-y-6 pointer-events-none">
+          <span class="text-[10px] sm:text-[11px] font-mono uppercase tracking-widest text-brand-gold block mb-1.5 font-bold">02 // INGENIERÍA TEXTIL</span>
+          <h2 class="font-display text-xl sm:text-2xl uppercase tracking-tight text-brand-ivory mb-2">96% Algodón • 4% Spandex</h2>
+          <p class="text-xs sm:text-sm text-brand-muted leading-relaxed mb-3 sm:mb-4">
+            Estructura textil de gramaje pesado seleccionada para ofrecer una silueta <strong class="text-brand-ivory">oversize</strong> impecable. Gran suavidad, frescura y memoria elástica que no se deforma con el uso ni los lavados diarios.
+          </p>
+          <ul class="space-y-1 text-xs text-brand-muted border-t border-brand-border/60 pt-2.5">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold flex-shrink-0"></span> <span><strong class="text-brand-ivory">Caída:</strong> Oversize estructurada</span></li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold flex-shrink-0"></span> <span><strong class="text-brand-ivory">Tejido:</strong> Algodón peinado ultra suave</span></li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-gold flex-shrink-0"></span> <span><strong class="text-brand-ivory">Origen:</strong> Hecho en Bogotá, Colombia</span></li>
+          </ul>
+        </div>
+
+        <!-- Card 3: Técnica DTF Ultra-HD (65% - 85% scroll) -->
+        <div id="card-step-3" class="story-card absolute inset-x-4 bottom-8 sm:bottom-auto sm:inset-x-auto sm:left-12 max-w-sm sm:max-w-md mx-auto sm:mx-0 bg-brand-card/90 backdrop-blur-xl border border-brand-border p-5 sm:p-8 rounded-2xl shadow-2xl transition-all duration-500 opacity-0 transform translate-y-6 pointer-events-none">
+          <span class="text-[10px] sm:text-[11px] font-mono uppercase tracking-widest text-brand-gold block mb-1.5 font-bold">03 // ESTAMPACIÓN DE VANGUARDIA</span>
+          <h2 class="font-display text-xl sm:text-2xl uppercase tracking-tight text-brand-ivory mb-2">DTF Ultra-HD (38 cm)</h2>
+          <p class="text-xs sm:text-sm text-brand-muted leading-relaxed mb-3 sm:mb-4">
+            Ilustraciones impresas en tecnología <strong class="text-brand-ivory">Direct to Film</strong> a escala real. Tinta blanca de alta opacidad y resolución nativa a 300 DPI que logran bordes microscópicamente nítidos y cero cuarteo.
+          </p>
+          <div class="grid grid-cols-2 gap-2 text-xs border-t border-brand-border/60 pt-2.5 text-brand-muted">
+            <div>
+              <span class="block text-brand-ivory font-bold text-sm">300 DPI</span>
+              <span>Resolución máx.</span>
+            </div>
+            <div>
+              <span class="block text-brand-ivory font-bold text-sm">38 cm</span>
+              <span>Área de espalda</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Potencia de la Marca & Transición al Catálogo (85% - 100% scroll) -->
+        <div id="card-step-4" class="story-card absolute inset-x-4 bottom-8 sm:bottom-auto sm:inset-x-auto sm:max-w-xl mx-auto text-center bg-brand-card/95 backdrop-blur-xl border border-brand-border p-5 sm:p-9 rounded-2xl shadow-2xl transition-all duration-500 opacity-0 transform translate-y-6 pointer-events-none">
+          <span class="text-[10px] sm:text-[11px] font-mono uppercase tracking-widest text-brand-gold block mb-1 font-bold">04 // LA COLECCIÓN COMPLETA</span>
+          <h2 class="font-display text-xl sm:text-3xl uppercase tracking-tight text-brand-ivory mb-2">Viste con Propósito</h2>
+          <p class="text-xs sm:text-sm text-brand-muted leading-relaxed mb-4 sm:mb-6 max-w-lg mx-auto">
+            Descubre nuestras tres líneas de diseño: <strong class="text-brand-ivory">Worship</strong>, <strong class="text-brand-ivory">Hombres y Mujeres de Dios</strong>, y <strong class="text-brand-ivory">Manual de Vida</strong>. Cada referencia ha sido diseñada para trascender.
+          </p>
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-2.5 sm:gap-3">
+            <a href="#coleccion" class="w-full sm:w-auto px-5 py-3 bg-brand-ivory text-brand-black font-display text-xs uppercase tracking-wider hover:bg-brand-red hover:text-white transition-all shadow-xl flex items-center justify-center gap-2">
+              <span>Explorar Catálogo</span>
+              <i data-lucide="arrow-down" class="w-3.5 h-3.5"></i>
+            </a>
+            <a href="https://wa.me/573192490604?text=Hola%2073505!%20Quiero%20conocer%20la%20colección%20completa%20y%20precios" target="_blank" rel="noopener noreferrer" 
+               class="w-full sm:w-auto px-5 py-3 bg-[#25D366] text-white font-display text-xs uppercase tracking-wider hover:brightness-110 transition-all shadow-xl flex items-center justify-center gap-2">
+              <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+              <span>Atención por WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="manifiesto" class="py-28 border-t border-brand-border bg-brand-dark relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-6 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-5">
+          <span class="text-xs uppercase tracking-widest text-brand-red font-bold">// El Origen de la Marca</span>
+          <h2 class="font-display text-4xl sm:text-5xl uppercase tracking-tighter leading-tight mt-2 mb-6">
+            La Declaración <br>
+            de 73505.
+          </h2>
+
+          <div class="p-8 border border-brand-border bg-brand-card/90 glow-red">
+            <div class="font-display text-4xl tracking-widest text-brand-ivory mb-2">7 3 5 0 5</div>
+            <div class="text-xs uppercase tracking-widest text-brand-red font-semibold flex items-center gap-2">
+              <i data-lucide="shield-check" class="w-4 h-4"></i>
+              <span>Decodificado: <strong>J E S Ú S</strong></span>
+            </div>
+            <p class="text-xs text-brand-muted mt-3 font-light leading-relaxed">
+              Un código numérico que convierte tu prenda en una declaración de identidad sin caer en clichés vacíos.
+            </p>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 space-y-6 text-brand-stone text-base sm:text-lg leading-relaxed font-light">
+          <p class="p-4 border-l-2 border-brand-red bg-brand-surface/40">
+            Crecimos escuchando que la fe era una lista de cargas antiguas, conceptos aburridos o reglas rígidas. En <strong class="text-brand-ivory font-bold">73505</strong> rompemos con esa perspectiva.
+          </p>
+          <p>
+            Para nosotros, las enseñanzas de Jesús no son una imposición del pasado; son el <strong class="text-brand-ivory font-medium">manual definitivo para vivir bien hoy</strong>: con carácter, salud mental, integridad y propósito real.
+          </p>
+          <p>
+            <strong class="text-brand-red font-bold">73505</strong> es una declaración de moda urbana contemporánea nacida en Bogotá para quienes visten con presencia y llevan un mensaje que construye.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Las Tres Líneas con Banners Cómic Reales (Pág 3 del PDF) -->
+  <section id="lineas" class="py-28 border-t border-brand-border bg-brand-black">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <div class="text-center max-w-3xl mx-auto mb-20">
+        <span class="text-xs uppercase tracking-widest text-brand-gold font-bold">// Arquitectura de Colección</span>
+        <h2 class="font-display text-4xl sm:text-6xl uppercase tracking-tighter mt-2 mb-4">Tres Líneas. Un Solo Propósito.</h2>
+        <p class="text-brand-muted font-light text-base">
+          Haz clic en cualquiera de los botones para saltar directamente al catálogo filtrado por cada línea.
+        </p>
+      </div>
+
+      <div class="space-y-16">
+        
+        <!-- Línea 01: Alabanza (Worship) -->
+        <div class="border border-brand-border bg-brand-card overflow-hidden group hover:border-brand-stone transition-all duration-300">
+          <div class="w-full relative overflow-hidden bg-brand-surface">
+            <img src="images/banner-worship.jpg" 
+                 alt="Banner Línea Worship" 
+                 class="w-full h-auto max-h-[380px] object-cover group-hover:scale-102 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
+            <div class="absolute top-6 left-6">
+              <span class="bg-brand-red text-white text-[11px] font-bold uppercase tracking-widest px-3 py-1">LÍNEA 01</span>
+            </div>
+            <div class="absolute bottom-6 left-6 right-6 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+              <div>
+                <h3 class="font-display text-2xl sm:text-4xl uppercase tracking-tight text-brand-ivory">ALABANZA // WORSHIP</h3>
+                <p class="text-xs text-brand-gold uppercase tracking-widest font-semibold mt-1">Canciones & Conexión Viva</p>
+              </div>
+              <!-- WORKING BUTTON: Filters & Scrolls smoothly to catalog -->
+              <button onclick="filterCatalogAndScroll('worship')" 
+                      class="px-6 py-3 bg-brand-ivory text-brand-black text-xs font-bold uppercase tracking-wider hover:bg-brand-red hover:text-white transition-all shadow-lg shrink-0 flex items-center gap-2">
+                <span>Ver Camisetas Worship</span>
+                <i data-lucide="arrow-down-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+          <div class="p-8 text-brand-stone text-sm sm:text-base leading-relaxed font-light">
+            Inspirada en las canciones de alabanza y en la necesidad vital de alabar como el puente más genuino de conexión con Dios. Diseños creados para poner las letras, el agradecimiento y la adoración en la conversación cotidiana de la calle, transformando la ropa en una declaración especial que conecta con Su presencia.
+          </div>
+        </div>
+
+        <!-- Línea 02: Héroes de Dios -->
+        <div class="border border-brand-border bg-brand-card overflow-hidden group hover:border-brand-stone transition-all duration-300">
+          <div class="w-full relative overflow-hidden bg-brand-surface">
+            <img src="images/banner-heroes.jpg" 
+                 alt="Banner Línea Héroes" 
+                 class="w-full h-auto max-h-[380px] object-cover group-hover:scale-102 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
+            <div class="absolute top-6 left-6">
+              <span class="bg-brand-red text-white text-[11px] font-bold uppercase tracking-widest px-3 py-1">LÍNEA 02</span>
+            </div>
+            <div class="absolute bottom-6 left-6 right-6 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+              <div>
+                <h3 class="font-display text-2xl sm:text-4xl uppercase tracking-tight text-brand-ivory">HÉROES DE DIOS</h3>
+                <p class="text-xs text-brand-gold uppercase tracking-widest font-semibold mt-1">Carácter, Valentía & Referentes</p>
+              </div>
+              <!-- WORKING BUTTON: Filters & Scrolls smoothly to catalog -->
+              <button onclick="filterCatalogAndScroll('heroes')" 
+                      class="px-6 py-3 bg-brand-ivory text-brand-black text-xs font-bold uppercase tracking-wider hover:bg-brand-red hover:text-white transition-all shadow-lg shrink-0 flex items-center gap-2">
+                <span>Ver Camisetas Héroes</span>
+                <i data-lucide="arrow-down-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+          <div class="p-8 text-brand-stone text-sm sm:text-base leading-relaxed font-light">
+            Una reinterpretación contemporánea de los grandes personajes de la Biblia. Más allá de un nombre o un relato histórico, esta línea promueve el coraje, la entereza y las buenas prácticas de estos hombres y mujeres para traerlos a nuestra vida diaria. Es modernizar su legado para inspirar nuestro propio carácter frente a los retos de hoy.
+          </div>
+        </div>
+
+        <!-- Línea 03: Manual de Vida -->
+        <div class="border border-brand-border bg-brand-card overflow-hidden group hover:border-brand-stone transition-all duration-300">
+          <div class="w-full relative overflow-hidden bg-brand-surface">
+            <img src="images/banner-manual-vida.jpg" 
+                 alt="Banner Línea Manual de Vida" 
+                 class="w-full h-auto max-h-[380px] object-cover group-hover:scale-102 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
+            <div class="absolute top-6 left-6">
+              <span class="bg-brand-red text-white text-[11px] font-bold uppercase tracking-widest px-3 py-1">LÍNEA 03</span>
+            </div>
+            <div class="absolute bottom-6 left-6 right-6 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+              <div>
+                <h3 class="font-display text-2xl sm:text-4xl uppercase tracking-tight text-brand-ivory">MANUAL DE VIDA</h3>
+                <p class="text-xs text-brand-gold uppercase tracking-widest font-semibold mt-1">Prácticas Bíblicas que Inspiran</p>
+              </div>
+              <!-- WORKING BUTTON: Filters & Scrolls smoothly to catalog -->
+              <button onclick="filterCatalogAndScroll('manual')" 
+                      class="px-6 py-3 bg-brand-ivory text-brand-black text-xs font-bold uppercase tracking-wider hover:bg-brand-red hover:text-white transition-all shadow-lg shrink-0 flex items-center gap-2">
+                <span>Ver Camisetas Manual</span>
+                <i data-lucide="arrow-down-right" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+          <div class="p-8 text-brand-stone text-sm sm:text-base leading-relaxed font-light">
+            Enfocada en aterrizar la sabiduría de las Escrituras a la rutina real. Elementos y hábitos bíblicos prácticos que generan inspiración continua: la disciplina personal, la integridad, el propósito y la vida en pareja (como nuestras ediciones especiales de conexión). La demostración de que la Biblia es el manual vigente para vivir con rumbo y plenitud.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Catálogo de Camisetas (Mockups Focus) -->
+  <section id="coleccion" class="py-28 border-t border-brand-border bg-brand-dark">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div>
+          <span class="text-xs uppercase tracking-widest text-brand-red font-bold">// Catálogo de Camisetas</span>
+          <h2 class="font-display text-4xl sm:text-6xl uppercase tracking-tighter mt-2">Colección 73505</h2>
+        </div>
+        
+        <!-- Filter Tabs -->
+        <div class="flex flex-wrap items-center gap-2 bg-brand-surface p-1.5 border border-brand-border">
+          <button onclick="filterCatalog('all')" id="btn-all" class="px-5 py-2 text-xs font-bold uppercase tracking-wider bg-brand-ivory text-brand-black transition-colors tab-btn">
+            Todas (6)
+          </button>
+          <button onclick="filterCatalog('worship')" id="btn-worship" class="px-5 py-2 text-xs font-bold uppercase tracking-wider text-brand-muted hover:text-brand-ivory transition-colors tab-btn">
+            Worship (3)
+          </button>
+          <button onclick="filterCatalog('heroes')" id="btn-heroes" class="px-5 py-2 text-xs font-bold uppercase tracking-wider text-brand-muted hover:text-brand-ivory transition-colors tab-btn">
+            Héroes (2)
+          </button>
+          <button onclick="filterCatalog('manual')" id="btn-manual" class="px-5 py-2 text-xs font-bold uppercase tracking-wider text-brand-muted hover:text-brand-ivory transition-colors tab-btn">
+            Manual (1)
+          </button>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="products-container">
+
+        <!-- 01: DIOS DE LO IMPOSIBLE -->
+        <div class="product-card border border-brand-border bg-brand-card flex flex-col justify-between overflow-hidden" data-category="worship">
+          <div>
+            <!-- Mockup Container (Clean E-Commerce Presentation) -->
+            <div class="relative h-[420px] product-img-box flex items-center justify-center p-4 overflow-hidden group cursor-pointer" onclick="openModal('images/01-dios-imposible.jpg', 'Dios de lo Imposible')">
+              <img src="images/mockup-01-dios-imposible.png" 
+                   alt="Camiseta Dios de lo Imposible" 
+                   class="max-h-[380px] w-auto object-contain group-hover:scale-105 transition-transform duration-500 filter drop-shadow-2xl"
+                   onerror="this.src='images/01-dios-imposible.jpg'; this.classList.remove('object-contain'); this.classList.add('object-cover', 'w-full', 'h-full');">
+              <div class="absolute top-4 left-4">
+                <span class="bg-brand-black/90 text-brand-gold text-[10px] font-bold uppercase tracking-widest px-3 py-1 border border-brand-border">
+                  LÍNEA 01 // WORSHIP
+                </span>
+              </div>
+              <div class="absolute bottom-4 right-4 bg-brand-black/80 backdrop-blur-md px-3 py-1.5 text-[10px] text-brand-ivory uppercase tracking-wider border border-brand-border flex items-center gap-1.5 opacity-80 group-hover:opacity-100 transition-opacity">
+                <i data-lucide="maximize-2" class="w-3 h-3 text-brand-gold"></i>
+                <span>Ver Ficha Técnica</span>
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="font-display text-2xl uppercase tracking-tight text-brand-ivory">DIOS DE LO IMPOSIBLE</div>
+              <div class="text-xs text-brand-gold uppercase tracking-wider font-semibold mt-1 mb-4">Lucas 1:37 • «Por ti existen los milagros»</div>
+
+              <!-- Color Palette -->
+              <div class="mb-4">
+                <div class="text-[10px] uppercase tracking-wider text-brand-muted font-semibold mb-2">Paleta 6 Tonos Curados:</div>
+                <div class="flex items-center gap-2">
+                  <span class="w-5 h-5 rounded-full bg-[#111113] border border-gray-600 inline-block" title="Negro Profundo"></span>
+                  <span class="w-5 h-5 rounded-full bg-[#F8F8FA] border border-gray-400 inline-block" title="Blanco Óptico"></span>
+                  <span class="w-5 h-5 rounded-full bg-[#94A88B] border border-gray-600 inline-block" title="Verde Salvia"></span>
+                  <span class="w-5 h-5 rounded-full bg-[#DFD3B8] border border-gray-600 inline-block" title="Beige Arena"></span>
+                  <span class="w-5 h-5 rounded-full bg-[#485238] border border-gray-600 inline-block" title="Verde Militar"></span>
+                  <span class="w-5 h-5 rounded-full bg-[#5A3825] border border-gray-600 inline-block" title="Café Tabaco"></span>
+                </div>
+              </div>
+
+              <!-- Selectors -->
+              <div class="grid grid-cols-2 gap-2 text-xs mb-4">
+                <div>
+                  <label class="block text-[10px] uppercase text-brand-muted mb-1 font-semibold">Silueta:</label>
+                  <select id="fit-1" class="w-full bg-brand-surface border border-brand-border text-brand-ivory py-1.5 px-2 text-xs focus:border-brand-gold outline-none">
+                    <option value="Hombre (Semi-Oversize)">Hombre (Semi-Oversize)</option>
+                    <option value="Dama (Silhouette Fit)">Dama (Silhouette Fit)</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-[10px] uppercase text-brand-muted mb-1 font-semibold">Prenda:</label>
+                  <select id="garment-1" class="w-full bg-brand-surface border border-brand-border text-brand-ivory py-1.5 px-2 text-xs focus:border-brand-gold outline-none">
+                    <option value="Camiseta Regular">Camiseta Regular</option>
+                    <option value="Camiseta Oversize">Camiseta Oversize</option>
+                    <option value="Manga Larga">Manga Larga</option>
+                    <option value="Sin Mangas">Sin Mangas</option>
+                    <option value="Hoodie">Hoodie</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 pt-0 border-t border-brand-border/60">
+            <button onclick="orderWhatsApp('Dios de lo Imposible', 'fit-1', 'garment-1')" 
+                    class="w-full inline-flex items-center justify-center gap-2 py-3 bg-brand-ivory text-brand-black hover:bg-brand-red hover:text-white text-xs font-bold uppercase tracking-wider transition-colors">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>Pedir por WhatsApp</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 02: SALVAVIDAS // ANCLA -->
+        <div class="product-card border border-brand-border bg-brand-card flex flex-col justify-between overflow-hidden" data-category="worship">
+          <div>
+            <div class="relative h-[420px] product-img-box flex items-center justify-center p-4 overflow-hidden group cursor-pointer" onclick="openModal('images/02-salvavidas.jpg', 'Salvavidas Ancla')">
+              <img src="images/mockup-02-salvavidas.png" 
+                   alt="Camiseta Salvavidas Ancla" 
+                   class="max-h-[380px] w-auto object-contain group-hover:scale-105 transition-transform duration-500 filter drop-shadow-2xl"
+                   onerror="this.src='images/02-salvavidas.jpg'; this.classList.remove('object-contain'); this.classList.add('object-cover', 'w-full', 'h-full');">
+              <div class="absolute top-4 left-4">
+                <span class="bg-brand-black/90 text-brand-gold text-[10px] font-bold uppercase tracking-widest px-3 py-1 border border-brand-border">
+                  LÍNEA 01 // WORSHIP
+                </span>
+              </div>
+              <div class="absolute bottom-4 right-4 bg-brand-black/80 backdrop-blur-md px-3 py-1.5 text-[10px] text-brand-ivory uppercase tracking-wider border border-brand-border flex items-center gap-1.5 opacity-80 group-hover:opacity-100 transition-opacity">
+                <i data-lucide="maximize-2" class="w-3 h-3 text-brand-gold"></i>
+                <span>Ver Ficha Técnica</span>
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="font-display text-2xl uppercase tracking-tight text-brand-ivory">SALVAVIDAS // ANCLA</div>
+              <div class="text-xs text-brand-gold uppercase tracking-wider font-semibold mt-1 mb-4">Hebreos 12:2 • «En ti anclo mi mirada»</div>
+
+              <div class="mb-4">
+                <div class="text-[10px] uppercase tracking-wider text-brand-muted font-semibold mb-2">Paleta 6 Tonos Curados:</div>
+                <div class="flex items-center gap-2">
+                  <span class="w-5 h-5 rounded-full bg-[#111113] border border-gray-600 inline-block" title="Negro Profundo"></span>
+                  <span class="w-5 h-5 rounded-full bg-[#F8F8FA] border border-gray-400 inline-block" title="Blanco Óptico"></span>
+                  <span class="w-5 h-5 rounded-full bg-[#9BB8CD] border border-gray-600 inline-block" title="Azul Cielo"></span>
+                  <span class="w-5 h-5 rounded-full bg-[#E8B4B8] border border-gray-600 inline-block" title="Rosa Suave"></span>
+                  <span class="w-5 h-5 rounded-full bg-[#1C2A3A] border border-gray-600 inline-block" title="Azul Medianoche"></span>
+                  <span class="w-5 h-5 rounded-full bg-[#8A8A92] border border-gray-600 inline-block" title="Gris Jaspe"></span>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2 gap-2 text-xs mb-4">
+                <div>
+                  <label class="block text-[10px] uppercase text-brand-muted mb-1 font-semibold">Silueta:</label>
+                  <select id="fit-2" class="w-full bg-brand-surface border border-brand-border text-brand-ivory py-1.5 px-2 text-xs focus:border-brand-gold outline-none">
+                    <option value="Hombre (Semi-Oversize)">Hombre (Semi-Oversize)</option>
+                    <option value="Dama (Silhouette Fit)">Dama (Silhouette Fit)</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-[10px] uppercase text-brand-muted mb-1 font-semibold">Prenda:</label>
+                  <select id="garment-2" class="w-full bg-brand-surface border border-brand-border text-brand-ivory py-1.5 px-2 text-xs focus:border-brand-gold outline-none">
+                    <option value="Camiseta Regular">Camiseta Regular</option>
+                    <option value="Camiseta Oversize">Camiseta Oversize</option>
+                    <option value="Manga Larga">Manga Larga</option>
+                    <option value="Sin Mangas">Sin Mangas</option>
+                    <option value="Hoodie">Hoodie</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 pt-0 border-t border-brand-border/60">
+            <button onclick="orderWhatsApp('Salvavidas Ancla', 'fit-2', 'garment-2')" 
+                    class="w-full inline-flex items-center justify-center gap-2 py-3 bg-brand-ivory text-brand-black hover:bg-brand-red hover:text-white text-xs font-bold uppercase tracking-wider transition-colors">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>Pedir por WhatsApp</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 03: SOY TUYO & PRECIOSA MÍA -->
+        <div class="product-card border border-brand-border bg-brand-card flex flex-col justify-between overflow-hidden" data-category="worship">
+          <div>
+            <div class="relative h-[420px] product-img-box flex items-center justify-center p-4 overflow-hidden group cursor-pointer" onclick="openModal('images/03-pareja-canciones.jpg', 'Soy Tuyo & Preciosa Mía')">
+              <img src="images/mockup-03-pareja-canciones.png" 
+                   alt="Camiseta Soy Tuyo y Preciosa Mía" 
+                   class="max-h-[380px] w-auto object-contain group-hover:scale-105 transition-transform duration-500 filter drop-shadow-2xl"
+                   onerror="this.src='images/03-pareja-canciones.jpg'; this.classList.remove('object-contain'); this.classList.add('object-cover', 'w-full', 'h-full');">
+              <div class="absolute top-4 left-4">
+                <span class="bg-brand-red text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1">
+                  EDICIÓN DÚO PAREJA
+                </span>
+              </div>
+              <div class="absolute bottom-4 right-4 bg-brand-black/80 backdrop-blur-md px-3 py-1.5 text-[10px] text-brand-ivory uppercase tracking-wider border border-brand-border flex items-center gap-1.5 opacity-80 group-hover:opacity-100 transition-opacity">
+                <i data-lucide="maximize-2" class="w-3 h-3 text-brand-gold"></i>
+                <span>Ver Ficha Técnica</span>
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="font-display text-2xl uppercase tracking-tight text-brand-ivory">SOY TUYO & PRECIOSA MÍA</div>
+              <div class="text-xs text-brand-gold uppercase tracking-wider font-semibold mt-1 mb-4">«Juntos por la eternidad» • Salmo 73 & Jeremías 31</div>
+
+              <div class="mb-4">
+                <div class="text-[10px] uppercase tracking-wider text-brand-muted font-semibold mb-2">Paleta 6 Tonos Curados:</div>
+                <div class="flex items-center gap-2">
+                  <span class="w-5 h-5 rounded-full bg-[#111113] border border-gray-600 inline-block" title="Negro Profundo"></span>
+                  <span class="w-5 h-5 rounded-full bg-[#F8F8FA] border border-gray-400 inline-block" title="Blanco Óptico"></span>
+                  <span class="w-5 h-5 rounded-full bg-[#E8B4B8] border border-gray-600 inline-block" title="Rosa Suave"></span>
+                  <span class="w-5 h-5 rounded-full bg-[#9BB8CD] border border-gray-600 inline-block" title="Azul Cielo"></span>
+                  <span class="w-5 h-5 rounded-full bg-[#1C2A3A] border border-gray-600 inline-block" title="Azul Medianoche"></span>
+                  <span class="w-5 h-5 rounded-full bg-[#8A8A92] border border-gray-600 inline-block" title="Gris Jaspe"></span>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2 gap-2 text-xs mb-4">
+                <div>
+                  <label class="block text-[10px] uppercase text-brand-muted mb-1 font-semibold">Modalidad:</label>
+                  <select id="fit-3" class="w-full bg-brand-surface border border-brand-border text-brand-ivory py-1.5 px-2 text-xs focus:border-brand-gold outline-none">
+                    <option value="Combo Dúo Pareja (2 Prendas)">Combo Dúo (2 Prendas)</option>
+                    <option value="Individual Hombre (Soy Tuyo)">Individual (Soy Tuyo)</option>
+                    <option value="Individual Dama (Preciosa Mía)">Individual (Preciosa Mía)</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-[10px] uppercase text-brand-muted mb-1 font-semibold">Prenda:</label>
+                  <select id="garment-3" class="w-full bg-brand-surface border border-brand-border text-brand-ivory py-1.5 px-2 text-xs focus:border-brand-gold outline-none">
+                    <option value="Camisetas Oversize">Camisetas Oversize</option>
+                    <option value="Camisetas Regulares">Camisetas Regulares</option>
+                    <option value="Hoodies Match">Hoodies Match</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 pt-0 border-t border-brand-border/60">
+            <button onclick="orderWhatsApp('Soy Tuyo y Preciosa Mía (Dúo)', 'fit-3', 'garment-3')" 
+                    class="w-full inline-flex items-center justify-center gap-2 py-3 bg-brand-ivory text-brand-black hover:bg-brand-red hover:text-white text-xs font-bold uppercase tracking-wider transition-colors">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>Pedir Combo o Prenda</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 04: DAVID CONVICCIÓN -->
+        <div class="product-card border border-brand-border bg-brand-card flex flex-col justify-between overflow-hidden" data-category="heroes">
+          <div>
+            <div class="relative h-[420px] product-img-box flex items-center justify-center p-4 overflow-hidden group cursor-pointer" onclick="openModal('images/04-david-conviccion.jpg', 'David Convicción')">
+              <img src="images/mockup-04-david-conviccion.png" 
+                   alt="Camiseta David Convicción" 
+                   class="max-h-[380px] w-auto object-contain group-hover:scale-105 transition-transform duration-500 filter drop-shadow-2xl"
+                   onerror="this.src='images/04-david-conviccion.jpg'; this.classList.remove('object-contain'); this.classList.add('object-cover', 'w-full', 'h-full');">
+              <div class="absolute top-4 left-4">
+                <span class="bg-brand-black/90 text-brand-red text-[10px] font-bold uppercase tracking-widest px-3 py-1 border border-brand-border">
+                  LÍNEA 02 // HÉROES
+                </span>
+              </div>
+              <div class="absolute bottom-4 right-4 bg-brand-black/80 backdrop-blur-md px-3 py-1.5 text-[10px] text-brand-ivory uppercase tracking-wider border border-brand-border flex items-center gap-1.5 opacity-80 group-hover:opacity-100 transition-opacity">
+                <i data-lucide="maximize-2" class="w-3 h-3 text-brand-gold"></i>
+                <span>Ver Ficha Técnica</span>
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="font-display text-2xl uppercase tracking-tight text-brand-ivory">DAVID // CONVICCIÓN</div>
+              <div class="text-xs text-brand-gold uppercase tracking-wider font-semibold mt-1 mb-4">1 Samuel 17:45 • «Firmeza absoluta frente a la adversidad»</div>
+
+              <div class="mb-4">
+                <div class="text-[10px] uppercase tracking-wider text-brand-muted font-semibold mb-2">Paleta 6 Tonos Curados:</div>
+                <div class="flex items-center gap-2">
+                  <span class="w-5 h-5 rounded-full bg-[#111113] border border-gray-600 inline-block" title="Negro Profundo"></span>
+                  <span class="w-5 h-5 rounded-full bg-[#F8F8FA] border border-gray-400 inline-block" title="Blanco Óptico"></span>
+                  <span class="w-5 h-5 rounded-full bg-[#EFE8DA] border border-gray-600 inline-block" title="Marfil Hueso"></span>
+                  <span class="w-5 h-5 rounded-full bg-[#9BB8CD] border border-gray-600 inline-block" title="Azul Cielo"></span>
+                  <span class="w-5 h-5 rounded-full bg-[#5A3825] border border-gray-600 inline-block" title="Café Tabaco"></span>
+                  <span class="w-5 h-5 rounded-full bg-[#323236] border border-gray-600 inline-block" title="Gris Carbón"></span>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2 gap-2 text-xs mb-4">
+                <div>
+                  <label class="block text-[10px] uppercase text-brand-muted mb-1 font-semibold">Silueta:</label>
+                  <select id="fit-4" class="w-full bg-brand-surface border border-brand-border text-brand-ivory py-1.5 px-2 text-xs focus:border-brand-gold outline-none">
+                    <option value="Hombre (Semi-Oversize)">Hombre (Semi-Oversize)</option>
+                    <option value="Dama (Silhouette Fit)">Dama (Silhouette Fit)</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-[10px] uppercase text-brand-muted mb-1 font-semibold">Prenda:</label>
+                  <select id="garment-4" class="w-full bg-brand-surface border border-brand-border text-brand-ivory py-1.5 px-2 text-xs focus:border-brand-gold outline-none">
+                    <option value="Camiseta Oversize">Camiseta Oversize</option>
+                    <option value="Camiseta Regular">Camiseta Regular</option>
+                    <option value="Hoodie">Hoodie</option>
+                    <option value="Sin Mangas">Sin Mangas</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 pt-0 border-t border-brand-border/60">
+            <button onclick="orderWhatsApp('David Convicción', 'fit-4', 'garment-4')" 
+                    class="w-full inline-flex items-center justify-center gap-2 py-3 bg-brand-ivory text-brand-black hover:bg-brand-red hover:text-white text-xs font-bold uppercase tracking-wider transition-colors">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>Pedir por WhatsApp</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 05: DAVID VALENTÍA -->
+        <div class="product-card border border-brand-border bg-brand-card flex flex-col justify-between overflow-hidden" data-category="heroes">
+          <div>
+            <div class="relative h-[420px] product-img-box flex items-center justify-center p-4 overflow-hidden group cursor-pointer" onclick="openModal('images/05-david-valentia.jpg', 'David Valentía')">
+              <img src="images/mockup-05-david-valentia.png" 
+                   alt="Camiseta David Valentía" 
+                   class="max-h-[380px] w-auto object-contain group-hover:scale-105 transition-transform duration-500 filter drop-shadow-2xl"
+                   onerror="this.src='images/05-david-valentia.jpg'; this.classList.remove('object-contain'); this.classList.add('object-cover', 'w-full', 'h-full');">
+              <div class="absolute top-4 left-4">
+                <span class="bg-brand-black/90 text-brand-red text-[10px] font-bold uppercase tracking-widest px-3 py-1 border border-brand-border">
+                  LÍNEA 02 // HÉROES
+                </span>
+              </div>
+              <div class="absolute bottom-4 right-4 bg-brand-black/80 backdrop-blur-md px-3 py-1.5 text-[10px] text-brand-ivory uppercase tracking-wider border border-brand-border flex items-center gap-1.5 opacity-80 group-hover:opacity-100 transition-opacity">
+                <i data-lucide="maximize-2" class="w-3 h-3 text-brand-gold"></i>
+                <span>Ver Ficha Técnica</span>
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="font-display text-2xl uppercase tracking-tight text-brand-ivory">DAVID // VALENTÍA</div>
+              <div class="text-xs text-brand-gold uppercase tracking-wider font-semibold mt-1 mb-4">1 Samuel 17:32 • «Avanza cuando todos retroceden»</div>
+
+              <div class="mb-4">
+                <div class="text-[10px] uppercase tracking-wider text-brand-muted font-semibold mb-2">Paleta 6 Tonos Curados:</div>
+                <div class="flex items-center gap-2">
+                  <span class="w-5 h-5 rounded-full bg-[#111113] border border-gray-600 inline-block" title="Negro Profundo"></span>
+                  <span class="w-5 h-5 rounded-full bg-[#F8F8FA] border border-gray-400 inline-block" title="Blanco Óptico"></span>
+                  <span class="w-5 h-5 rounded-full bg-[#EFE8DA] border border-gray-600 inline-block" title="Marfil Hueso"></span>
+                  <span class="w-5 h-5 rounded-full bg-[#9BB8CD] border border-gray-600 inline-block" title="Azul Cielo"></span>
+                  <span class="w-5 h-5 rounded-full bg-[#5A3825] border border-gray-600 inline-block" title="Café Tabaco"></span>
+                  <span class="w-5 h-5 rounded-full bg-[#323236] border border-gray-600 inline-block" title="Gris Carbón"></span>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2 gap-2 text-xs mb-4">
+                <div>
+                  <label class="block text-[10px] uppercase text-brand-muted mb-1 font-semibold">Silueta:</label>
+                  <select id="fit-5" class="w-full bg-brand-surface border border-brand-border text-brand-ivory py-1.5 px-2 text-xs focus:border-brand-gold outline-none">
+                    <option value="Hombre (Semi-Oversize)">Hombre (Semi-Oversize)</option>
+                    <option value="Dama (Silhouette Fit)">Dama (Silhouette Fit)</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-[10px] uppercase text-brand-muted mb-1 font-semibold">Prenda:</label>
+                  <select id="garment-5" class="w-full bg-brand-surface border border-brand-border text-brand-ivory py-1.5 px-2 text-xs focus:border-brand-gold outline-none">
+                    <option value="Camiseta Oversize">Camiseta Oversize</option>
+                    <option value="Camiseta Regular">Camiseta Regular</option>
+                    <option value="Hoodie">Hoodie</option>
+                    <option value="Manga Larga">Manga Larga</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 pt-0 border-t border-brand-border/60">
+            <button onclick="orderWhatsApp('David Valentía', 'fit-5', 'garment-5')" 
+                    class="w-full inline-flex items-center justify-center gap-2 py-3 bg-brand-ivory text-brand-black hover:bg-brand-red hover:text-white text-xs font-bold uppercase tracking-wider transition-colors">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>Pedir por WhatsApp</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 06: 99 / 100 PROPÓSITO -->
+        <div class="product-card border border-brand-border bg-brand-card flex flex-col justify-between overflow-hidden" data-category="manual">
+          <div>
+            <div class="relative h-[420px] product-img-box flex items-center justify-center p-4 overflow-hidden group cursor-pointer" onclick="openModal('images/06-ovejas-proposito.jpg', '99/100 Propósito')">
+              <img src="images/mockup-06-ovejas-proposito.png" 
+                   alt="Camiseta 99 100 Propósito" 
+                   class="max-h-[380px] w-auto object-contain group-hover:scale-105 transition-transform duration-500 filter drop-shadow-2xl"
+                   onerror="this.src='images/06-ovejas-proposito.jpg'; this.classList.remove('object-contain'); this.classList.add('object-cover', 'w-full', 'h-full');">
+              <div class="absolute top-4 left-4">
+                <span class="bg-brand-gold text-brand-black text-[10px] font-bold uppercase tracking-widest px-3 py-1">
+                  LÍNEA 03 // MANUAL DE VIDA
+                </span>
+              </div>
+              <div class="absolute bottom-4 right-4 bg-brand-black/80 backdrop-blur-md px-3 py-1.5 text-[10px] text-brand-ivory uppercase tracking-wider border border-brand-border flex items-center gap-1.5 opacity-80 group-hover:opacity-100 transition-opacity">
+                <i data-lucide="maximize-2" class="w-3 h-3 text-brand-gold"></i>
+                <span>Ver Ficha Técnica</span>
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="font-display text-2xl uppercase tracking-tight text-brand-ivory">99 / 100 // PROPÓSITO</div>
+              <div class="text-xs text-brand-gold uppercase tracking-wider font-semibold mt-1 mb-4">Lucas 15:4-7 • «Juntos por siempre»</div>
+
+              <div class="mb-4">
+                <div class="text-[10px] uppercase tracking-wider text-brand-muted font-semibold mb-2">Paleta 6 Tonos Curados:</div>
+                <div class="flex items-center gap-2">
+                  <span class="w-5 h-5 rounded-full bg-[#F8F8FA] border border-gray-400 inline-block" title="Blanco Óptico"></span>
+                  <span class="w-5 h-5 rounded-full bg-[#111113] border border-gray-600 inline-block" title="Negro Profundo"></span>
+                  <span class="w-5 h-5 rounded-full bg-[#94A88B] border border-gray-600 inline-block" title="Verde Salvia"></span>
+                  <span class="w-5 h-5 rounded-full bg-[#EFE8DA] border border-gray-600 inline-block" title="Marfil Hueso"></span>
+                  <span class="w-5 h-5 rounded-full bg-[#485238] border border-gray-600 inline-block" title="Verde Militar"></span>
+                  <span class="w-5 h-5 rounded-full bg-[#5A3825] border border-gray-600 inline-block" title="Café Tabaco"></span>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2 gap-2 text-xs mb-4">
+                <div>
+                  <label class="block text-[10px] uppercase text-brand-muted mb-1 font-semibold">Modalidad:</label>
+                  <select id="fit-6" class="w-full bg-brand-surface border border-brand-border text-brand-ivory py-1.5 px-2 text-xs focus:border-brand-gold outline-none">
+                    <option value="Combo Dúo Pareja (99 + 100)">Combo Dúo (99 + 100)</option>
+                    <option value="Individual Hombre 99 (Juntos)">Hombre 99 (Juntos)</option>
+                    <option value="Individual Dama 100 (Por Siempre)">Dama 100 (Por Siempre)</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-[10px] uppercase text-brand-muted mb-1 font-semibold">Prenda:</label>
+                  <select id="garment-6" class="w-full bg-brand-surface border border-brand-border text-brand-ivory py-1.5 px-2 text-xs focus:border-brand-gold outline-none">
+                    <option value="Camisetas Oversize">Camisetas Oversize</option>
+                    <option value="Camisetas Regulares">Camisetas Regulares</option>
+                    <option value="Hoodies">Hoodies</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 pt-0 border-t border-brand-border/60">
+            <button onclick="orderWhatsApp('99/100 Propósito', 'fit-6', 'garment-6')" 
+                    class="w-full inline-flex items-center justify-center gap-2 py-3 bg-brand-ivory text-brand-black hover:bg-brand-red hover:text-white text-xs font-bold uppercase tracking-wider transition-colors">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>Pedir Combo o Prenda</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Lookbook Editorial Urbano (Págs 4 y 5 del PDF) -->
+  <section id="lookbook" class="py-24 border-t border-brand-border bg-brand-black">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs uppercase tracking-widest text-brand-gold font-bold">// Editorial Visual</span>
+        <h2 class="font-display text-4xl sm:text-5xl uppercase tracking-tighter mt-2">73505 en la Calle</h2>
+        <p class="text-brand-muted font-light text-sm mt-2">
+          Prendas fotografiadas en entornos urbanos y arquitectura brutalista en Bogotá.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="h-96 relative group overflow-hidden border border-brand-border bg-brand-surface">
+          <img src="images/lookbook-1.jpg" 
+               alt="Lookbook 73505 Bogotá" 
+               class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-black/90 via-transparent to-transparent flex items-end p-6">
+            <span class="text-xs uppercase tracking-wider font-mono text-brand-gold font-semibold">01 // ESCALERAS & PROPÓSITO</span>
+          </div>
+        </div>
+
+        <div class="h-96 relative group overflow-hidden border border-brand-border bg-brand-surface">
+          <img src="images/lookbook-2.jpg" 
+               alt="Lookbook 73505 Streetwear" 
+               class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-black/90 via-transparent to-transparent flex items-end p-6">
+            <span class="text-xs uppercase tracking-wider font-mono text-brand-gold font-semibold">02 // ARQUITECTURA URBANA</span>
+          </div>
+        </div>
+
+        <div class="h-96 relative group overflow-hidden border border-brand-border bg-brand-surface">
+          <img src="images/lookbook-3.jpg" 
+               alt="Lookbook 73505 Comunidad" 
+               class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-black/90 via-transparent to-transparent flex items-end p-6">
+            <span class="text-xs uppercase tracking-wider font-mono text-brand-gold font-semibold">03 // ESTILO DE VIDA</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section: Calidad y Confección (Págs 5 y 6 del PDF) -->
+  <section id="calidad" class="py-28 border-t border-brand-border bg-brand-dark">
+    <div class="max-w-6xl mx-auto px-6">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs uppercase tracking-widest text-brand-red font-bold">// Estándar Industrial Textil</span>
+        <h2 class="font-display text-4xl sm:text-5xl uppercase tracking-tighter mt-2 mb-4">El Estándar 73505</h2>
+        <p class="text-brand-muted font-light text-base">
+          Cualquier diseño de nuestras colecciones cobra vida con estampación DTF Ultra-HD de alta durabilidad en la prenda que mejor se adapte a tu estilo.
+        </p>
+      </div>
+
+      <!-- 4 Quality Badges (Pág 5 del PDF) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        
+        <div class="p-6 border border-brand-border bg-brand-card">
+          <div class="w-12 h-12 rounded bg-brand-surface border border-brand-border flex items-center justify-center mb-4 text-brand-gold">
+            <i data-lucide="cloud" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-display text-sm uppercase mb-2">96% Algodón / 4% Spandex</h4>
+          <p class="text-xs text-brand-muted leading-relaxed font-light">
+            Caída pesada (heavyweight), textura ultrasuave y flexibilidad con memoria. No se deforma con el uso continuo.
+          </p>
+        </div>
+
+        <div class="p-6 border border-brand-border bg-brand-card">
+          <div class="w-12 h-12 rounded bg-brand-surface border border-brand-border flex items-center justify-center mb-4 text-brand-gold">
+            <i data-lucide="shield-check" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-display text-sm uppercase mb-2">Estructura Indeformable</h4>
+          <p class="text-xs text-brand-muted leading-relaxed font-light">
+            Cuello cerrado reforzado de alta densidad. La prenda conserva su forma y no se desboca tras las lavadas.
+          </p>
+        </div>
+
+        <div class="p-6 border border-brand-border bg-brand-card">
+          <div class="w-12 h-12 rounded bg-brand-surface border border-brand-border flex items-center justify-center mb-4 text-brand-gold">
+            <i data-lucide="award" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-display text-sm uppercase mb-2">Confección 100% Colombiana</h4>
+          <p class="text-xs text-brand-muted leading-relaxed font-light">
+            Costuras industriales dobles y mano de obra nacional de primer nivel. Orgullo de producción local en Bogotá.
+          </p>
+        </div>
+
+        <div class="p-6 border border-brand-border bg-brand-card">
+          <div class="w-12 h-12 rounded bg-brand-surface border border-brand-border flex items-center justify-center mb-4 text-brand-gold">
+            <i data-lucide="sparkles" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-display text-sm uppercase mb-2">Estampado DTF Ultra-HD</h4>
+          <p class="text-xs text-brand-muted leading-relaxed font-light">
+            Adherencia térmica profunda con colores de alta fidelidad que no se cuartean y resisten el paso del tiempo.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Garment Types (Pág 6 del PDF) -->
+      <div class="border border-brand-border bg-brand-card p-8">
+        <h4 class="text-center font-display text-xl uppercase tracking-wider text-brand-ivory mb-8">// Siluetas & Prendas Disponibles</h4>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 text-center">
+          <div class="p-4 border border-brand-border/60 bg-brand-surface">
+            <i data-lucide="shirt" class="w-8 h-8 text-brand-stone mx-auto mb-2"></i>
+            <div class="font-display text-xs uppercase">Camiseta Regular</div>
+            <div class="text-[10px] text-brand-muted mt-1">Corte Clásico</div>
+          </div>
+          <div class="p-4 border border-brand-border/60 bg-brand-surface">
+            <i data-lucide="shirt" class="w-8 h-8 text-brand-gold mx-auto mb-2"></i>
+            <div class="font-display text-xs uppercase">Camiseta Oversize</div>
+            <div class="text-[10px] text-brand-muted mt-1">Hombro Caído</div>
+          </div>
+          <div class="p-4 border border-brand-border/60 bg-brand-surface">
+            <i data-lucide="shirt" class="w-8 h-8 text-brand-stone mx-auto mb-2"></i>
+            <div class="font-display text-xs uppercase">Manga Larga</div>
+            <div class="text-[10px] text-brand-muted mt-1">Puño Acanalado</div>
+          </div>
+          <div class="p-4 border border-brand-border/60 bg-brand-surface">
+            <i data-lucide="shirt" class="w-8 h-8 text-brand-stone mx-auto mb-2"></i>
+            <div class="font-display text-xs uppercase">Sin Mangas</div>
+            <div class="text-[10px] text-brand-muted mt-1">Sisa Urbana</div>
+          </div>
+          <div class="p-4 border border-brand-border/60 bg-brand-surface col-span-2 sm:col-span-1">
+            <i data-lucide="vest" class="w-8 h-8 text-brand-red mx-auto mb-2"></i>
+            <div class="font-display text-xs uppercase">Hoodie</div>
+            <div class="text-[10px] text-brand-muted mt-1">Capucha & Canguro</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Banner Descarga Catálogo Completo -->
+  <section class="py-20 border-t border-brand-border bg-gradient-to-r from-brand-surface via-brand-dark to-brand-surface text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <span class="text-xs uppercase tracking-widest text-brand-gold font-bold">// Documento Oficial</span>
+      <h3 class="font-display text-3xl sm:text-5xl uppercase tracking-tighter my-4">
+        Descarga el Catálogo Completo en PDF
+      </h3>
+      <p class="text-brand-stone max-w-xl mx-auto text-sm font-light mb-8">
+        Guarda en tu celular las 13 páginas oficiales con las fichas técnicas, paletas de colores y especificaciones de confección de 73505.
+      </p>
+
+      <a href="https://drive.google.com/file/d/1RArrKMt2Zcyv1Yn7Vd2C8H7PQj2TN-qt/view?usp=drivesdk" target="_blank" rel="noopener noreferrer" 
+         class="inline-flex items-center gap-3 px-8 py-4 bg-brand-gold text-brand-black font-display text-xs uppercase tracking-wider hover:bg-white transition-all shadow-xl">
+        <i data-lucide="file-down" class="w-4 h-4"></i>
+        <span>Descargar Catálogo.pdf (23 MB)</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- CTA Final WhatsApp (Pág 13 del PDF) -->
+  <section class="py-24 border-t border-brand-border text-center bg-brand-black relative overflow-hidden">
+    <div class="max-w-4xl mx-auto px-6 relative z-10">
+      <div class="font-display text-4xl sm:text-6xl tracking-widest text-brand-stone mb-4">7 3 5 0 5</div>
+      <div class="text-xs uppercase tracking-widest text-brand-red font-bold mb-6">NO ES RELIGIÓN. ES UN ESTILO DE VIDA.</div>
+      
+      <p class="text-brand-muted max-w-xl mx-auto text-base font-light mb-10">
+        Cada referencia se confecciona bajo demanda en lotes limitados en Bogotá. Escríbenos directamente para asesorarte con tu talla y coordinar tu envío nacional.
+      </p>
+
+      <a href="https://wa.me/573192490604?text=Hola%2073505!%20Quiero%20hacer%20un%20pedido%20de%20la%20colección" target="_blank" rel="noopener noreferrer"
+         class="inline-flex items-center gap-4 px-10 py-5 bg-[#25D366] text-white font-display text-sm uppercase tracking-wider hover:bg-emerald-600 transition-all shadow-2xl rounded-full">
+        <i data-lucide="message-circle" class="w-6 h-6"></i>
+        <div class="text-left">
+          <div class="text-[10px] uppercase tracking-widest font-normal text-emerald-100">Contáctanos - Solo WhatsApp</div>
+          <div class="font-bold text-lg tracking-tight">319 249 0604</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 border-t border-brand-border bg-brand-black text-xs text-brand-muted">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <img src="images/logo.png" alt="73505" class="h-6 w-auto object-contain opacity-80">
+        <span>// Confección & Diseño Textil • Bogotá, Colombia</span>
+      </div>
+      <div>
+        © 2026 73505 Brand. Todos los derechos reservados. WhatsApp oficial: +57 319 249 0604.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/573192490604?text=Hola%2073505!%20Tengo%20una%20consulta%20sobre%20las%20prendas" 
+     target="_blank" rel="noopener noreferrer" 
+     class="fixed bottom-6 right-6 z-50 p-4 bg-[#25D366] text-white rounded-full shadow-2xl hover:scale-110 transition-all duration-300 flex items-center justify-center"
+     title="Escríbenos por WhatsApp">
+    <i data-lucide="message-circle" class="w-7 h-7"></i>
+  </a>
+
+  <!-- Lightbox Modal for Technical Sheets -->
+  <div id="image-modal" class="fixed inset-0 z-50 bg-black/95 backdrop-blur-md hidden flex items-center justify-center p-4" onclick="closeModal()">
+    <div class="relative max-w-4xl max-h-[90vh] flex flex-col items-center" onclick="event.stopPropagation()">
+      <button onclick="closeModal()" class="absolute -top-12 right-0 text-white hover:text-brand-red transition-colors flex items-center gap-1 text-sm font-semibold">
+        <span>Cerrar</span>
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+      <img id="modal-img" src="" alt="Ficha ampliada" class="max-h-[82vh] w-auto object-contain border border-brand-border rounded shadow-2xl">
+      <div id="modal-caption" class="text-center font-display text-sm uppercase tracking-wider text-brand-gold mt-3"></div>
+    </div>
+  </div>
+
+  <!-- Interactive JavaScript -->
+  <script>
+    lucide.createIcons();
+
+    // Catalog category filtering
+    function filterCatalog(category) {
+      const cards = document.querySelectorAll('.product-card');
+      const buttons = document.querySelectorAll('.tab-btn');
+      
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-brand-ivory', 'text-brand-black');
+        btn.classList.add('text-brand-muted');
+      });
+      const activeBtn = document.getElementById('btn-' + category);
+      if (activeBtn) {
+        activeBtn.classList.add('bg-brand-ivory', 'text-brand-black');
+        activeBtn.classList.remove('text-brand-muted');
+      }
+
+      cards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    function filterCatalogAndScroll(category) {
+      filterCatalog(category);
+      const target = document.getElementById('coleccion');
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    function openModal(imageSrc, caption) {
+      document.getElementById('modal-img').src = imageSrc;
+      document.getElementById('modal-caption').innerText = caption + ' // Ficha Oficial';
+      document.getElementById('image-modal').classList.remove('hidden');
+    }
+
+    function closeModal() {
+      document.getElementById('image-modal').classList.add('hidden');
+    }
+
+    function orderWhatsApp(referenceName, fitSelectId, garmentSelectId) {
+      const fit = document.getElementById(fitSelectId).value;
+      const garment = document.getElementById(garmentSelectId).value;
+      const phone = "573192490604";
+      const message = "Hola 73505! Quiero ordenar la referencia " + referenceName + " en silueta " + fit + ", tipo de prenda " + garment + ". Tienen disponibilidad de tallas y colores?";
+      const url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
+      window.open(url, '_blank');
+    }
+
+    // ==========================================
+    // Scrollytelling 96-Frame Canvas Controller
+    // ==========================================
+    const heroExperience = document.getElementById('hero-experience');
+    const heroCanvas = document.getElementById('hero-canvas');
+    const ctx = heroCanvas.getContext('2d');
+    const preloader = document.getElementById('preloader');
+    const preloaderBar = document.getElementById('preloader-bar');
+    const preloaderText = document.getElementById('preloader-text');
+
+    const card0 = document.getElementById('card-step-0');
+    const card1 = document.getElementById('card-step-1');
+    const card2 = document.getElementById('card-step-2');
+    const card3 = document.getElementById('card-step-3');
+    const card4 = document.getElementById('card-step-4');
+
+    const totalFrames = 96;
+    const frames = [];
+    let loadedCount = 0;
+    let currentFrame = 0;
+    let targetFrame = 0;
+
+    function getFramePath(index) {
+      var str = "" + index;
+      var pad = "0000";
+      var ans = pad.substring(0, pad.length - str.length) + str;
+      return "frames/frame_" + ans + ".jpg";
+    }
+
+    function resizeCanvas() {
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      heroCanvas.width = window.innerWidth * dpr;
+      heroCanvas.height = window.innerHeight * dpr;
+      drawCurrentFrame(Math.round(currentFrame));
+    }
+
+    function drawCurrentFrame(index) {
+      const img = frames[index];
+      if (!img || !img.complete) return;
+
+      const cw = heroCanvas.width;
+      const ch = heroCanvas.height;
+      const iw = img.naturalWidth || img.width;
+      const ih = img.naturalHeight || img.height;
+
+      const canvasRatio = cw / ch;
+      const imgRatio = iw / ih;
+
+      let dw, dh, ox, oy;
+      if (canvasRatio > imgRatio) {
+        dw = cw;
+        dh = cw / imgRatio;
+        ox = 0;
+        oy = (ch - dh) / 2;
+      } else {
+        dh = ch;
+        dw = ch * imgRatio;
+        ox = (cw - dw) / 2;
+        oy = 0;
+      }
+
+      ctx.clearRect(0, 0, cw, ch);
+      ctx.drawImage(img, ox, oy, dw, dh);
+    }
+
+    function updateCardVisibility(progress) {
+      function setCardState(card, isVisible) {
+        if (!card) return;
+        if (isVisible) {
+          card.classList.remove('opacity-0', 'translate-y-6', 'pointer-events-none');
+          card.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+        } else {
+          card.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+          card.classList.add('opacity-0', 'translate-y-6', 'pointer-events-none');
+        }
+      }
+
+      setCardState(card0, progress >= 0 && progress < 0.18);
+      setCardState(card1, progress >= 0.20 && progress < 0.42);
+      setCardState(card2, progress >= 0.44 && progress < 0.65);
+      setCardState(card3, progress >= 0.67 && progress < 0.86);
+      setCardState(card4, progress >= 0.88 && progress <= 1.0);
+    }
+
+    function onScrollHero() {
+      if (!heroExperience) return;
+      const rect = heroExperience.getBoundingClientRect();
+      const scrollY = -rect.top;
+      const totalScrollable = heroExperience.offsetHeight - window.innerHeight;
+      
+      const progress = Math.max(0, Math.min(1, scrollY / (totalScrollable || 1)));
+      targetFrame = Math.min(totalFrames - 1, Math.max(0, Math.floor(progress * (totalFrames - 1))));
+      updateCardVisibility(progress);
+    }
+
+    function animLoop() {
+      const diff = targetFrame - currentFrame;
+      if (Math.abs(diff) > 0.01) {
+        currentFrame += diff * 0.2;
+        drawCurrentFrame(Math.round(currentFrame));
+      }
+      requestAnimationFrame(animLoop);
+    }
+
+    // Preload Frames
+    for (let i = 1; i <= totalFrames; i++) {
+      const img = new Image();
+      img.src = getFramePath(i);
+      img.onload = () => {
+        loadedCount++;
+        const pct = Math.round((loadedCount / totalFrames) * 100);
+        if (preloaderBar) preloaderBar.style.width = pct + "%";
+        if (preloaderText) preloaderText.textContent = "Cargando experiencia " + pct + "%";
+
+        if (loadedCount === 1) {
+          resizeCanvas();
+        }
+        if (loadedCount === totalFrames) {
+          setTimeout(() => {
+            if (preloader) preloader.classList.add('hidden-loader');
+          }, 300);
+        }
+      };
+      img.onerror = () => {
+        loadedCount++;
+        if (loadedCount === totalFrames && preloader) {
+          preloader.classList.add('hidden-loader');
+        }
+      };
+      frames.push(img);
+    }
+
+    window.addEventListener('resize', resizeCanvas);
+    window.addEventListener('scroll', onScrollHero, { passive: true });
+
+    resizeCanvas();
+    animLoop();
+    onScrollHero();
+  
+    // ==========================================
+    // Google Sheets Dynamic Catalog Integration
+    // ==========================================
+    const GOOGLE_SHEET_ID = '12kSyXTsO8VI9WnLHFdPAqb0ZO5HvOtBcQiNXTVed39k';
+    const GOOGLE_SHEET_URL = 'https://docs.google.com/spreadsheets/d/' + GOOGLE_SHEET_ID + '/gviz/tq?tqx=out:json';
+
+    async function syncCatalogWithGoogleSheets() {
+      try {
+        const response = await fetch(GOOGLE_SHEET_URL);
+        if (!response.ok) return;
+        const text = await response.text();
+        const match = text.match(/setResponse\((.*)\);/);
+        if (!match || !match[1]) return;
+
+        const data = JSON.parse(match[1]);
+        const rows = data.table.rows;
+        if (!rows || rows.length === 0) return;
+
+        const products = [];
+        let countAll = 0, countWorship = 0, countHeroes = 0, countManual = 0;
+
+        rows.forEach((r, idx) => {
+          const c = r.c;
+          if (!c) return;
+          const getVal = (colIdx) => (c[colIdx] && c[colIdx].v !== null && c[colIdx].v !== undefined) ? ('' + c[colIdx].v).trim() : '';
+
+          const id = getVal(0);
+          const referencia = getVal(1);
+          const linea = getVal(2);
+          const codigoFiltro = (getVal(3) || 'worship').toLowerCase();
+          const precio = getVal(4) || '$95.000';
+          const silueta = getVal(5) || 'Oversize / Regular';
+          const colores = getVal(6) || 'Marfil, Negro';
+          const imagenFicha = getVal(7) || '';
+          const imagenPrenda = getVal(8) || imagenFicha;
+          const versiculo = getVal(9) || '';
+          const descripcion = getVal(10) || '';
+          const estado = (getVal(11) || 'ACTIVO').toUpperCase();
+
+          // Only show active products
+          if (estado !== 'ACTIVO' && estado !== 'SI' && estado !== 'TRUE') return;
+          if (!referencia) return;
+
+          countAll++;
+          if (codigoFiltro.includes('worship')) countWorship++;
+          else if (codigoFiltro.includes('hero')) countHeroes++;
+          else if (codigoFiltro.includes('manual')) countManual++;
+
+          products.push({
+            id: id || idx,
+            referencia: referencia,
+            linea: linea,
+            codigoFiltro: codigoFiltro,
+            precio: precio,
+            silueta: silueta,
+            colores: colores,
+            imagenFicha: imagenFicha,
+            imagenPrenda: imagenPrenda,
+            versiculo: versiculo,
+            descripcion: descripcion
+          });
+        });
+
+        if (products.length === 0) return;
+
+        // Render dynamic cards into #products-container
+        const container = document.getElementById('products-container');
+        if (!container) return;
+
+        let cardsHtml = '';
+        products.forEach((p, index) => {
+          const fitId = 'fit-sheet-' + index;
+          const garmentId = 'garment-sheet-' + index;
+          const modalImg = p.imagenFicha || p.imagenPrenda;
+          const cardImg = p.imagenPrenda || p.imagenFicha;
+          const fallbackImg = p.imagenFicha || p.imagenPrenda;
+
+          cardsHtml += `
+            <div class="product-card border border-brand-border bg-brand-card flex flex-col justify-between overflow-hidden" data-category="${p.codigoFiltro}">
+              <div>
+                <div class="relative h-[420px] product-img-box flex items-center justify-center p-4 overflow-hidden group cursor-pointer" onclick="openModal('${modalImg}', '${p.referencia}')">
+                  <img src="${cardImg}" 
+                       onerror="this.src='${fallbackImg}'; this.classList.remove('object-contain'); this.classList.add('object-cover', 'w-full', 'h-full');" 
+                       alt="${p.referencia}" 
+                       class="max-h-[380px] w-auto object-contain transition-transform duration-500 group-hover:scale-105">
+                  <div class="absolute bottom-3 right-3 bg-brand-black/80 px-2.5 py-1 text-[10px] uppercase font-mono tracking-widest text-brand-gold border border-brand-border backdrop-blur-sm flex items-center gap-1.5 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <i data-lucide="zoom-in" class="w-3 h-3"></i>
+                    <span>Ver Ficha Técnica</span>
+                  </div>
+                </div>
+
+                <div class="p-6 border-t border-brand-border">
+                  <div class="flex items-center justify-between text-xs text-brand-muted mb-2 font-mono uppercase">
+                    <span class="text-brand-gold font-semibold">${p.linea}</span>
+                    <span>${p.silueta}</span>
+                  </div>
+
+                  <h3 class="font-display text-xl uppercase tracking-tight text-brand-ivory mb-2">${p.referencia}</h3>
+                  
+                  <div class="text-xs text-brand-stone font-light leading-relaxed mb-4">
+                    ${p.versiculo ? `<span class="italic text-brand-gold/90 font-serif block mb-1">"${p.versiculo}"</span>` : ''}
+                    <p>${p.descripcion}</p>
+                  </div>
+
+                  <div class="space-y-3 pt-3 border-t border-brand-border/60">
+                    <div>
+                      <label class="block text-[10px] uppercase font-mono tracking-widest text-brand-muted mb-1">Silueta:</label>
+                      <select id="${fitId}" class="w-full bg-brand-surface border border-brand-border text-xs px-3 py-2 text-brand-stone focus:outline-none focus:border-brand-ivory">
+                        <option value="Oversize" selected>Oversize (Corte Urbano)</option>
+                        <option value="Regular">Regular Clásica</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label class="block text-[10px] uppercase font-mono tracking-widest text-brand-muted mb-1">Prenda / Color:</label>
+                      <select id="${garmentId}" class="w-full bg-brand-surface border border-brand-border text-xs px-3 py-2 text-brand-stone focus:outline-none focus:border-brand-ivory">
+                        <option value="Camiseta Cuello Redondo" selected>Camiseta Cuello Redondo</option>
+                        <option value="Camiseta Cuello V">Camiseta Cuello V</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-6 pt-0 border-t border-brand-border/60 mt-4 flex items-center justify-between">
+                <div>
+                  <span class="text-[10px] uppercase font-mono text-brand-muted block">Precio</span>
+                  <span class="font-display text-lg text-brand-ivory">${p.precio}</span>
+                </div>
+                <button onclick="orderWhatsApp('${p.referencia}', '${fitId}', '${garmentId}')" 
+                        class="inline-flex items-center gap-2 bg-brand-surface hover:bg-[#25D366] text-brand-ivory hover:text-white border border-brand-border hover:border-[#25D366] px-4 py-2.5 text-xs font-bold uppercase tracking-wider transition-all duration-200">
+                  <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+                  <span>Pedir</span>
+                </button>
+              </div>
+            </div>
+          `;
+        });
+
+        container.innerHTML = cardsHtml;
+
+        // Update tab buttons counts
+        const btnAll = document.getElementById('btn-all');
+        const btnWorship = document.getElementById('btn-worship');
+        const btnHeroes = document.getElementById('btn-heroes');
+        const btnManual = document.getElementById('btn-manual');
+
+        if (btnAll) btnAll.textContent = `Todas (${countAll})`;
+        if (btnWorship) btnWorship.textContent = `Worship (${countWorship})`;
+        if (btnHeroes) btnHeroes.textContent = `Héroes (${countHeroes})`;
+        if (btnManual) btnManual.textContent = `Manual (${countManual})`;
+
+        lucide.createIcons();
+      } catch (err) {
+        console.warn('Google Sheets sync notice (using static catalog):', err);
+      }
+    }
+
+    // Call sync on page load
+    syncCatalogWithGoogleSheets();
+
+  </script>
+</body>
+</html>
